@@ -1,6 +1,6 @@
 {
    "name": "id-generator",
-   "version": "0.0.1-alfa.1",
+   "version": "0.0.1-alfa.2",
    "description": "",
    "author": "Nikita Babko <niki.babko@gmail.com>",
    "main": "index.js",
@@ -17,7 +17,7 @@
       "encryption"
    ],
    "license": "ISC",
-   "homepage": "https://github.com/nikitababko/password-generator#readme",
+   "homepage": "https://github.com/nikitababko/id-generator#readme",
    "repository": {
       "type": "git",
       "url": "git+https://github.com/nikitababko/id-generator.git"
