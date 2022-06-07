@@ -1,0 +1,31 @@
+{
+   "name": "id-generator",
+   "version": "0.0.1-alfa.1",
+   "description": "",
+   "author": "Nikita Babko <niki.babko@gmail.com>",
+   "main": "index.js",
+   "scripts": {
+      "pre-commit": "yarn pre-release",
+      "pre-release": "npm --no-git-tag-version version prerelease && git add ."
+   },
+   "keywords": [
+      "id",
+      "generator",
+      "id generator",
+      "id-generator",
+      "crypto",
+      "encryption"
+   ],
+   "license": "ISC",
+   "homepage": "https://github.com/nikitababko/password-generator#readme",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/nikitababko/id-generator.git"
+   },
+   "bugs": {
+      "url": "https://github.com/nikitababko/id-generator/issues"
+   },
+   "devDependencies": {
+      "husky": "^8.0.1"
+   }
+}
