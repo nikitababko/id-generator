@@ -24,6 +24,28 @@
    };
    ```
 
+   -  shortId
+
+   ```tsx
+   import React from 'react';
+   import { shortId } from '@nikitababko/id-generator'; // 1407c4b
+
+   import { AppProps } from './App.types.ts';
+
+   export const App: React.FC<AppProps> = ({ users }) => {
+      return (
+         <div>
+            {users.map((item) => (
+               <div key={shortId()}>
+                  <p>{item.name}</p>
+                  <p>{item.age}</p>
+               </div>
+            ))}
+         </div>
+      );
+   };
+   ```
+
 ## Installation
 
 Install my-project with `npm` or `yarn`

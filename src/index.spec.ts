@@ -1,6 +1,6 @@
 import { expect, assert } from 'chai';
 
-import { uuidv4, shortIdGenerator } from './index';
+import { uuidv4, shortId } from './index';
 
 describe('ID generator', () => {
    describe('uuidv4', () => {
@@ -20,23 +20,20 @@ describe('ID generator', () => {
       });
    });
 
-   describe('shortIdGenerator', () => {
+   describe('shortId', () => {
       it("Value to be exists'", () => {
          assert.exists(
-            shortIdGenerator(),
+            shortId(),
             'Value is not exists or equal to null/undefined'
          );
       });
 
       it("Value length to be '7' if length agrument equal to 7", () => {
-         expect(shortIdGenerator(7)).to.be.length(7);
+         expect(shortId(7)).to.be.length(7);
       });
 
       it("Value type to be 'string'", () => {
-         assert(
-            typeof shortIdGenerator() === 'string',
-            'Value type is not a string'
-         );
+         assert(typeof shortId() === 'string', 'Value type is not a string');
       });
    });
 });

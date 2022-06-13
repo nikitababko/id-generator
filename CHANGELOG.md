@@ -1,7 +1,7 @@
 ### v1.0.0 (2022-07-13)
 
 -  ✨ Added method 'uuidv4'
--  ✨ Added method 'shortIdGenerator'
+-  ✨ Added method 'shortId'
 -  📝 Meta stuff (README, CHANGELOG, etc...)
 -  ✅ Added tests
 -  🔧 Configured webpack
