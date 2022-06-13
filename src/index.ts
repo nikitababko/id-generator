@@ -1,0 +1,13 @@
+export const uuidv4 = (): string => {
+   return '########-####-####-####-############'.replaceAll(
+      /#/g,
+      () => Math.random().toString(16)[2]
+   );
+};
+
+export const shortIdGenerator = (length: number = 7): string => {
+   const zerosString = Object.values(new Uint32Array(length + 1)).join('');
+   return String(
+      Math.floor(Math.random() * Number(`1${zerosString}`)).toString(16)
+   );
+};
