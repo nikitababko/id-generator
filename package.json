@@ -1,6 +1,6 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
@@ -16,7 +16,7 @@
     "pre:minor": "npm --no-git-tag-version version minor && git add .",
     "pre:major": "npm --no-git-tag-version version major && git add .",
     "prepare": "husky install",
-    "create-hook": "husky add .husky/pre-commit \"yarn pre:commit && git add .\""
+    "create-hook": "npx husky add .husky/pre-commit \"yarn pre:commit && git add .\""
   },
   "keywords": [
     "id",
