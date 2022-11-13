@@ -1,6 +1,6 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
@@ -10,12 +10,12 @@
     "build": "tsc",
     "build:lib": "npm run clear && tsc -p tsconfig.production.json && webpack",
     "test:all": "mocha './src/index.spec.ts'",
-    "pre:commit": "yarn pre:patch",
-    "pre:release": "npm --no-git-tag-version version prerelease && git add .",
-    "pre:patch": "npm --no-git-tag-version version patch && git add .",
-    "pre:minor": "npm --no-git-tag-version version minor && git add .",
-    "pre:major": "npm --no-git-tag-version version major && git add .",
-    "prepare": "husky install",
+    "pre:commit": "yarn test:all && yarn build:lib && yarn v:patch",
+    "v:release": "npm --no-git-tag-version version prerelease && git add .",
+    "v:patch": "npm --no-git-tag-version version patch && git add .",
+    "v:minor": "npm --no-git-tag-version version minor && git add .",
+    "v:major": "npm --no-git-tag-version version major && git add .",
+    "prepare": "npx husky install",
     "create-hook": "npx husky add .husky/pre-commit \"yarn pre:commit && git add .\""
   },
   "keywords": [
