@@ -1,6 +1,6 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
