@@ -1,3 +1,7 @@
+/**
+ * @description uuidv4 method
+ * @returns {string} - id string
+ */
 export const uuidv4 = (): string => {
   return "########-####-####-####-############".replaceAll(
     /#/g,
@@ -6,11 +10,11 @@ export const uuidv4 = (): string => {
 };
 
 /**
- * shortId method
- * @method
- * @param {number} length - Password length.
- * @return {string}
+ * @description shortId method
+ * @param {number} length - password length
+ * @returns {password: string}
  */
+
 export const shortId = (length = 7): string => {
   const zerosString = Object.values(new Uint32Array(length + 1)).join("");
   return String(

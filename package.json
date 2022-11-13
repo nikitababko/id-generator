@@ -1,6 +1,6 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
@@ -8,7 +8,7 @@
     "start:example": "ts-node tests/index.ts",
     "clear": "rm -rf dist",
     "build": "tsc",
-    "build:lib": "npm run clear && tsc && tsc -m es6 --outDir dist && webpack",
+    "build:lib": "npm run clear && tsc -p tsconfig.production.json && webpack",
     "test:all": "mocha './src/index.spec.ts'",
     "pre:commit": "yarn pre:patch",
     "pre:release": "npm --no-git-tag-version version prerelease && git add .",
@@ -40,7 +40,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "/dist"
+    "./dist",
+    "LICENSE.md",
+    "README.md",
+    "package.json"
   ],
   "engines": {
     "node": ">=14.17.5"

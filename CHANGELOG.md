@@ -1,3 +1,8 @@
+### v1.0.6 (2022-11-12)
+- 🔧 Refactored code
+- 📝 Added code docs for 'uuidv4' method 
+
+
 ### v1.0.0 (2022-07-13)
 
 -  ✨ Added method 'uuidv4'
