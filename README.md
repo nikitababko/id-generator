@@ -1,6 +1,6 @@
 # ID generator &middot; ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## Examples
+## Usage example
 
 -  uuidv4
 
