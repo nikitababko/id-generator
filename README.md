@@ -50,9 +50,11 @@
 
 Install my-project with `npm` or `yarn`
 
--  npm - `yarn add @nikitababko/id-generator`
+- npm - `yarn add @nikitababko/id-generator`
 
--  yarn - `npm install @nikitababko/id-generator`
+- yarn - `npm install @nikitababko/id-generator`
+
+- pnpm - `pnpm i @nikitababko/id-generator`
 
 ## License
 
