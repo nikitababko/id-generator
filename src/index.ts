@@ -14,7 +14,6 @@ export const uuidv4 = (): string => {
  * @param {number} length - password length
  * @returns {password: string}
  */
-
 export const shortId = (length = 7): string => {
   const zerosString = Object.values(new Uint32Array(length + 1)).join("");
   return String(
