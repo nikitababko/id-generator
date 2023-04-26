@@ -6,7 +6,7 @@
 
    ```tsx
    import React from 'react';
-   import { uuidv4 } from '@nikitababko/id-generator'; // d9c5f9f9-a7c3-ef9e-62cb-17ceea52001f
+   import { uuidv4 } from '@nikitababko/id-generator';
 
    import { AppProps } from './App.types.ts';
 
@@ -14,7 +14,7 @@
       return (
          <div>
             {users.map((item) => (
-               <div key={uuidv4()}>
+               <div key={uuidv4()}> {/* d9c5f9f9-a7c3-ef9e-62cb-17ceea52001f */}
                   <p>{item.name}</p>
                   <p>{item.age}</p>
                </div>
@@ -24,38 +24,38 @@
    };
    ```
 
-   -  shortId
+-  shortId
 
-   ```tsx
-   import React from 'react';
-   import { shortId } from '@nikitababko/id-generator'; // 1407c4b
+  ```tsx
+  import React from 'react';
+  import { shortId } from '@nikitababko/id-generator';
 
-   import { AppProps } from './App.types.ts';
+  import { AppProps } from './App.types.ts';
 
-   export const App: React.FC<AppProps> = ({ users }) => {
-      return (
-         <div>
-            {users.map((item) => (
-               <div key={shortId()}>
-                  <p>{item.name}</p>
-                  <p>{item.age}</p>
-               </div>
-            ))}
-         </div>
-      );
-   };
-   ```
+  export const App: React.FC<AppProps> = ({ users }) => {
+     return (
+        <div>
+           {users.map((item) => (
+              <div key={shortId()}> {/* 1407c4b */}
+                 <p>{item.name}</p>
+                 <p>{item.age}</p>
+              </div>
+           ))}
+        </div>
+     );
+  };
+  ```
 
 ## Installation
 
-Install my-project with `npm` or `yarn`
+Installation is done using the `npm` or `yarn` or `pnpm`
 
-- npm - `yarn add @nikitababko/id-generator`
+- npm - `npm i @nikitababko/id-generator`
 
-- yarn - `npm install @nikitababko/id-generator`
+- yarn - `yarn add @nikitababko/id-generator`
 
 - pnpm - `pnpm i @nikitababko/id-generator`
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](./LICENSE.md)
