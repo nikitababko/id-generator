@@ -1,6 +1,6 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
@@ -33,7 +33,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "./dist",
+    "dist",
     "LICENSE.md",
     "README.md",
     "package.json"
