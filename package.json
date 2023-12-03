@@ -1,10 +1,10 @@
 {
   "name": "@nikitababko/id-generator",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "ID generator",
   "author": "Nikita Babko <niki.babko@gmail.com>",
   "scripts": {
-    "start:dev": "ts-node src/index.ts",
+    "start:dev": "ts-node src/index.dev.ts",
     "start:example": "ts-node tests/index.ts",
     "clear": "rm -rf dist",
     "build:lib": "npm run clear && tsc -p tsconfig.production.json && webpack",
@@ -39,7 +39,7 @@
     "package.json"
   ],
   "engines": {
-    "node": ">=14.17.5"
+    "node": "18.16.0"
   },
   "config": {
     "commitizen": {
