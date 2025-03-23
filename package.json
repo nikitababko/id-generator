@@ -1,0 +1,79 @@
+{
+  "name": "@nikitababko/id-generator",
+  "version": "2.0.0",
+  "description": "ID generator",
+  "author": "Nikita Babko <niki.babko@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "start:dev": "vite-node src/index.dev.ts",
+    "start:example": "vite-node tests/index.ts",
+    "build": "tsc && vite build",
+    "test:unit": "vitest run src/index.spec.ts",
+    "prepare": "npx husky install"
+  },
+  "keywords": [
+    "id",
+    "generator",
+    "id generator",
+    "id-generator",
+    "crypto",
+    "encryption",
+    "unique",
+    "uuid",
+    "random"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "private": false,
+  "homepage": "https://github.com/nikitababko/id-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikitababko/id-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikitababko/id-generator/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": "22.13.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "commitizen.config.cjs"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
+    "@eslint/js": "9.23.0",
+    "@stylistic/eslint-plugin-js": "4.2.0",
+    "@stylistic/eslint-plugin-ts": "4.2.0",
+    "@types/node": "22.13.11",
+    "@typescript-eslint/eslint-plugin": "8.27.0",
+    "@typescript-eslint/parser": "8.27.0",
+    "commitizen": "4.3.1",
+    "cz-customizable": "7.4.0",
+    "eslint": "9.23.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-plugin-unicorn": "57.0.0",
+    "globals": "16.0.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.5.0",
+    "typescript": "5.7.2",
+    "vite": "6.2.0",
+    "vite-node": "3.0.9",
+    "vite-plugin-dts": "4.5.3",
+    "vitest": "3.0.9"
+  }
+}

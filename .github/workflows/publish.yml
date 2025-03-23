@@ -1,0 +1,33 @@
+name: '🚀 publish'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    name: 🚀 publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📚 checkout
+        uses: actions/checkout@v3
+      # Setup .npmrc file to publish to npm
+      - name: 🟢 node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.0
+          registry-url: https://registry.npmjs.org
+      - name: 🚀 publish
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.AUTH_TOKEN_NPM}}
+      # Setup .npmrc file to publish to GitHub Packages
+      - name: 🟢 node
+        uses: actions/setup-node@v3
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+      - name: 🚀 publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_TOKEN_GITHUB }}
